@@ -8,24 +8,24 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(VULKAN_SDK);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(VK_SDK_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>
-        $(VULKAN_SDK)\glslang\build\glslang\$(VulkanConfiguration)\glslang$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\HLSL\$(VulkanConfiguration)\hlsl$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\SPIRV\$(VulkanConfiguration)\SPIRV$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\glslang\OSDependent\Windows\$(VulkanConfiguration)\OSDependent$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\OGLCompilersDLL\$(VulkanConfiguration)\OGLCompiler$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\glslang\$(VulkanConfiguration)\glslang$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\HLSL\$(VulkanConfiguration)\hlsl$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\SPIRV\$(VulkanConfiguration)\SPIRV$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\glslang\OSDependent\Windows\$(VulkanConfiguration)\OSDependent$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\OGLCompilersDLL\$(VulkanConfiguration)\OGLCompiler$(LibSuffix).lib;
         %(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Link>
       <AdditionalDependencies>
-        $(VULKAN_SDK)\glslang\build\glslang\$(VulkanConfiguration)\glslang$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\HLSL\$(VulkanConfiguration)\hlsl$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\SPIRV\$(VulkanConfiguration)\SPIRV$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\glslang\OSDependent\Windows\$(VulkanConfiguration)\OSDependent$(LibSuffix).lib;
-        $(VULKAN_SDK)\glslang\build\OGLCompilersDLL\$(VulkanConfiguration)\OGLCompiler$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\glslang\$(VulkanConfiguration)\glslang$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\HLSL\$(VulkanConfiguration)\hlsl$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\SPIRV\$(VulkanConfiguration)\SPIRV$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\glslang\OSDependent\Windows\$(VulkanConfiguration)\OSDependent$(LibSuffix).lib;
+        $(VK_SDK_PATH)\glslang\build\OGLCompilersDLL\$(VulkanConfiguration)\OGLCompiler$(LibSuffix).lib;
         %(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
