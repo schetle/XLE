@@ -43,6 +43,21 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Documentation.h" />
     <ClInclude Include="..\DX11\Device.h" />
