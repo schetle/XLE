@@ -130,9 +130,7 @@
             return (unsigned)copyAmount;
         }
 
-        void UnderlyingDeviceContext::ResourceCopy_DefragSteps(
-			UnderlyingResource& destination, UnderlyingResource& source, 
-			const std::vector<DefragStep>& steps)
+        void UnderlyingDeviceContext::ResourceCopy_DefragSteps(const UnderlyingResourcePtr& destination, const UnderlyingResourcePtr& source, const std::vector<Utility::DefragStep>& steps)
         {
         }
 
