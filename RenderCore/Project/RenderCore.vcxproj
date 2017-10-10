@@ -151,6 +151,36 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DX11|Win32'">
     <PreLinkEvent />
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DX11|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-OpenGL|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile-DX11|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile-OpenGL|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-DX11|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-OpenGL|x64'">
+    <PreLinkEvent>
+      <Command>cscript $(SolutionDir)\BuildScripts\PostBuildVersion.js $(IntDir)\Version.obj $(Configuration)</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Documentation.h" />
     <ClInclude Include="..\DX11\Device.h">
